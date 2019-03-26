@@ -18,7 +18,7 @@ api = tp.API(auth)
 
 os.chdir('Pups')
 
-# iterates over pictures in models folder
+# iterates over pictures in Pups folder
 for pup_image in os.listdir('.'):
     api.update_with_media(pup_image)
     time.sleep(86400)
